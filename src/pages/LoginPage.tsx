@@ -183,6 +183,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onBack }) => {
                 required
                 value={formData.password}
                 onChange={handleChange}
+                autoComplete="new-password"
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent pr-10"
               />
               <button
@@ -213,7 +214,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ onBack }) => {
           </button>
         </div>
 
-        
+        {isLogin && (
+          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+            <h3 className="font-semibold mb-2">Comptes de test :</h3>
+            <div className="text-sm text-gray-600 space-y-1">
+              <p><strong>Admin :</strong> quickntasty96@gmail.com / password@</p>
+              <p><strong>Client :</strong> client@test.com / password123</p>
+              <p><strong>Employé :</strong> employee@test.com / password123</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
