@@ -212,17 +212,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ onBack }) => {
             {isLogin ? 'Créer un compte' : 'Déjà un compte ? Se connecter'}
           </button>
         </div>
-
-        {isLogin && (
-          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-            <h3 className="font-semibold mb-2">Comptes de test :</h3>
-            <div className="text-sm text-gray-600 space-y-1">
-              <p><strong>Admin :</strong> quickntasty96@gmail.com / password@</p>
-              <p><strong>Client :</strong> client@test.com / password123</p>
-              <p><strong>Employé :</strong> employee@test.com / password123</p>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
